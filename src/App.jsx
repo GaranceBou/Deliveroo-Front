@@ -9,7 +9,7 @@ function App() {
 
   const fetchData = async () => {
     const response = await axios.get(
-      "http://site--jedeliver-backend--t5cc8d9btyyw.code.run"
+      "https://site--jedeliver-backend--t5cc8d9btyyw.code.run/"
     );
     console.log(response.data);
     setData(response.data);
