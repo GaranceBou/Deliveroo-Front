@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+/* header */
+.bar {
+  border-bottom: rgb(231, 231, 231) 1px solid;
+}
+
+.barlogo {
+  height: 60px;
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.barlogo img {
+  height: 70%;
+}
+
+.restaurant-title {
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
+}
+
+.restaurant {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.restaurant-photo {
+  width: 350px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 30px;
+  padding: 20px 0;
+  font-weight: bold;
+  font-family: "Lucida Sans Regular", sans-serif;
+}
+
+.restaurant-title p {
+  font-size: 18px;
+  line-height: 28.8px;
+  font-family: "Lucida Sans";
+  color: #868a8a;
+  padding-top: 10px;
+}
+
+main {
+  background-color: #f2f5f5;
+  height: 700px;
+}
+
+/*menu*/
+.menu {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  padding: 30px 0;
+  font-size: 23px;
+  font-weight: bold;
+  font-family: "Lucida Sans Regular", sans-serif;
+}
