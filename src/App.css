@@ -210,6 +210,10 @@ h3 {
 }
 
 @media (max-width: 768px) {
+  body {
+    width: 768px;
+  }
+
   .dish {
     max-width: 760px;
     width: 96vw;
