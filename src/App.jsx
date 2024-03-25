@@ -44,8 +44,38 @@ function App() {
 
       <main>
         <div className="menu">
-          <h2>{data.categories.name}</h2>
-          <div className="plat"></div>
+          {data.categories.map((elem, index) => {
+            return (
+              <div key={index}>
+                <h2>{elem.name}</h2>
+                <div className="dishes">
+                  {elem.meals.map((meal) => {
+                    return (
+                      <div className="dish">
+                        <div className="textdish">
+                          <div className="name-desc">
+                            <h3>{meal.title}</h3>
+                            <p>{meal.description}</p>
+                          </div>
+                          <div className="price-popular">
+                            <span className="price">{meal.price} €</span>
+                            {meal.popular && (
+                              <span className="popular">Populaire</span>
+                            )}
+                          </div>
+                        </div>
+                        {meal.picture && (
+                          <div className="meal-img">
+                            <img src={meal.picture} alt="meal" />
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            );
+          })}
         </div>
       </main>
     </div>
