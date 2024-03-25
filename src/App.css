@@ -148,6 +148,10 @@ h3 {
   height: 28px;
 }
 
+.dish:hover {
+  cursor: pointer;
+}
+
 /* responsive */
 
 /* 1184px */
@@ -210,5 +214,10 @@ h3 {
     max-width: 760px;
     width: 96vw;
     margin-right: 8px;
+  }
+
+  .dishes {
+    display: flex;
+    flex-direction: column;
   }
 }
