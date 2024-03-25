@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import "./App.css";
-// import Header from "./components/Header";
 import axios from "axios";
 import logo from "./images/logo-teal.svg";
 
@@ -9,7 +8,9 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   const fetchData = async () => {
-    const response = await axios.get("http://localhost:3200");
+    const response = await axios.get(
+      "site--jedeliver-backend--t5cc8d9btyyw.code.run"
+    );
     console.log(response.data);
     setData(response.data);
     setIsLoading(false);
