@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import "./App.css";
 // import Header from "./components/Header";
 import axios from "axios";
+import logo from "./images/logo-teal.svg";
 
 function App() {
   const [data, setData] = useState({});
@@ -26,7 +27,7 @@ function App() {
       <div className="header">
         <div className="bar">
           <div className="barlogo">
-            <img className="logo" src="/logo-teal.svg" alt="logo" />
+            <img className="logo" src={logo} alt="logo" />
           </div>
         </div>
         <div className="restaurant">
