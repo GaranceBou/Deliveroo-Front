@@ -26,7 +26,7 @@ function App() {
       <div className="header">
         <div className="bar">
           <div className="barlogo">
-            <img className="logo" src="src/images/logo-teal.svg" alt="logo" />
+            <img className="logo" src="/logo-teal.svg" alt="logo" />
           </div>
         </div>
         <div className="restaurant">
