@@ -180,9 +180,17 @@ h3 {
     width: 70%;
     height: 160px;
   }
+
+  .barlogo {
+    width: 1090px;
+  }
 }
 
 @media (max-width: 870px) {
+  .barlogo {
+    width: 870px;
+  }
+
   .restaurant {
     display: flex;
     flex-direction: column;
@@ -219,5 +227,9 @@ h3 {
   .dishes {
     display: flex;
     flex-direction: column;
+  }
+
+  .barlogo {
+    width: 768px;
   }
 }
