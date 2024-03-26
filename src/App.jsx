@@ -16,7 +16,10 @@ function App() {
     setIsLoading(false);
   };
 
-  const categorieVide = data.categories.filter((elem) => elem.meals.length > 0);
+  const categorieVide =
+    data.categories && Array.isArray(data.categories)
+      ? data.categories.filter((elem) => elem.meals.length > 0)
+      : [];
 
   useEffect(() => {
     console.log("useEffect executed");
@@ -47,14 +50,14 @@ function App() {
 
       <main>
         <div className="menu">
-          {categorieVide.map((elem, index) => {
+          {categorieVide.map((category, index) => {
             return (
               <div key={index}>
-                <h2>{elem.name}</h2>
+                <h2>{category.name}</h2>
                 <div className="dishes">
-                  {elem.meals.map((meal) => {
+                  {category.meals.map((meal, index) => {
                     return (
-                      <div className="dish">
+                      <div key={index} className="dish">
                         <div className="textdish">
                           <div className="name-desc">
                             <h3>{meal.title}</h3>
