@@ -68,7 +68,7 @@ main {
 }
 
 h2 {
-  padding: 30px 0;
+  padding: 30px 10px;
   font-size: 23px;
   font-weight: bold;
   font-family: "Lucida Sans Regular", sans-serif;
@@ -164,10 +164,6 @@ h3 {
   /* .restaurant-title {
     padding: 0 10px;
   } */
-
-  .menu {
-    padding: 0 10px;
-  }
 
   .restaurant {
     display: flex;

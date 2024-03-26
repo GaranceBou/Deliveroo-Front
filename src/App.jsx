@@ -16,11 +16,12 @@ function App() {
     setIsLoading(false);
   };
 
+  const categorieVide = data.categories.filter((elem) => elem.meals.length > 0);
+
   useEffect(() => {
     console.log("useEffect executed");
     fetchData();
   }, []);
-
   return isLoading ? (
     <span>En cours de chargement... </span>
   ) : (
@@ -46,7 +47,7 @@ function App() {
 
       <main>
         <div className="menu">
-          {data.categories.map((elem, index) => {
+          {categorieVide.map((elem, index) => {
             return (
               <div key={index}>
                 <h2>{elem.name}</h2>
