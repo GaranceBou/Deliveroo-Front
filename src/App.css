@@ -9,7 +9,7 @@
 
 .barlogo {
   height: 60px;
-  width: 1200px;
+  max-width: 1200px;
   display: flex;
   align-items: center;
   margin: 0 auto;
@@ -77,13 +77,13 @@ h2 {
 .dishes {
   display: flex;
   gap: 20px;
-  width: 852px;
+  max-width: 852px;
   flex-wrap: wrap;
 }
 
 .dish {
   background-color: white;
-  width: 400px;
+  max-width: 400px;
   height: 160px;
   padding: 15px;
   padding-bottom: 10px;
@@ -182,13 +182,13 @@ h3 {
   }
 
   .barlogo {
-    width: 1090px;
+    max-width: 1090px;
   }
 }
 
 @media (max-width: 870px) {
   .barlogo {
-    width: 870px;
+    max-width: 870px;
   }
 
   .restaurant {
@@ -230,6 +230,6 @@ h3 {
   }
 
   .barlogo {
-    width: 768px;
+    max-width: 768px;
   }
 }
