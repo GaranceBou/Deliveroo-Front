@@ -6,6 +6,7 @@ import logo from "./images/logo-teal.svg";
 function App() {
   const [data, setData] = useState({});
   const [isLoading, setIsLoading] = useState(true);
+  const [panier, setPanier] = useState([]);
 
   const fetchData = async () => {
     const response = await axios.get(
@@ -52,12 +53,20 @@ function App() {
         <div className="menu">
           {categorieVide.map((category, index) => {
             return (
-              <div key={index}>
+              <div className="left" key={index}>
                 <h2>{category.name}</h2>
                 <div className="dishes">
                   {category.meals.map((meal, index) => {
                     return (
-                      <div key={index} className="dish">
+                      <div
+                        key={index}
+                        className="dish"
+                        onClick={(e) => {
+                          console.log(meal);
+                          setPanier(panier.push(meal));
+                          console.log(panier);
+                        }}
+                      >
                         <div className="textdish">
                           <div className="name-desc">
                             <h3>{meal.title}</h3>
@@ -79,6 +88,16 @@ function App() {
                     );
                   })}
                 </div>
+              </div>
+            );
+          })}
+        </div>
+        <div className="panier">
+          {panier.map((prod) => {
+            return (
+              <div className="items">
+                <p>{prod.title}</p>
+                <p>{prod.price}</p>
               </div>
             );
           })}
