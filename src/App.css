@@ -58,14 +58,17 @@ h1 {
 main {
   background-color: #f2f5f5;
   height: 100%;
+  max-width: 100%;
   padding-bottom: 60px;
 }
 
-/*menu*/
-.menu {
+.center {
   max-width: 1200px;
+  display: flex;
   margin: 0 auto;
 }
+
+/*menu*/
 
 h2 {
   padding: 30px 10px;
@@ -79,6 +82,7 @@ h2 {
   gap: 20px;
   max-width: 852px;
   flex-wrap: wrap;
+  padding-left: 5px;
 }
 
 .dish {
@@ -150,6 +154,46 @@ h3 {
 
 .dish:hover {
   cursor: pointer;
+}
+
+.right {
+  font-family: "Lucida Sans Unicode", sans-serif;
+  margin-top: 30px;
+  width: 350px;
+  background-color: white;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: #808484 5px 5px 5px;
+}
+
+.right p {
+  background-color: #00ccbc;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+  color: white;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.cart {
+  padding: 10px;
+}
+
+.choice {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.right span {
+  font-size: 15px;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /* responsive */
